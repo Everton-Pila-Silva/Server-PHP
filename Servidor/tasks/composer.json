@@ -1,0 +1,19 @@
+{
+    "name": "si/tasks",
+    "type": "project",
+    "authors": [
+        {
+            "name": "everton pila silva",
+            "email": "evertonpilasilva@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "App\\" : "App/",
+            "SI\\" : "vendor/SI"
+        }
+    }
+}
+

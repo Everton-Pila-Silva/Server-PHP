@@ -1,0 +1,28 @@
+<section>
+	<h2>Cadastrar nova tarefa</h2>
+<form method="post" action="/add">
+	<input type="text" name="name" id="name" required="required" placeholder="Nome da Tarefa">
+	
+	<input type="text" name="description" id="description" placeholder="Descrição da tarefa">
+
+	<input type="date" name="due" id="due" placeholder="Prazo">
+
+	<input type="radio" name="priority" id="low" value="low">
+	<label for="low">Baixa</label>
+	<input type="radio" name="priority" id="medium" value="medium">
+	<label for="medium">Média</label>
+	<input type="radio" name="priority" id="high" value="high">
+	<label for="high">Alta</label>
+
+	<input type="checkbox" name="finished" id="finished" value="1">
+	<label for="finished">finalizada</label>
+
+	<input type="submit" name="save" id="save" value="Salvar">
+
+</form>
+</section>
+<section>
+	<h2>Tarefas:</h2>
+	<?php var_dump($this->taskList);?>
+
+</section>
